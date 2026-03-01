@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ars Longa Vita Brevis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gold;
+            color: #4a4a4a;
+        }
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+        .navbar {
+            background-color: brown;
+            padding: 15px 60px;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            color: white;
+            cursor: pointer;
+            font-size: 20px;
+        }
+        .navbar ul li:hover {
+            color: black;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            margin-left: 10px;
+        }
+        .main {
+            display: flex;
+            justify-content: space-between;
+            padding: 600px; /* Opsional: sesuaikan padding jika terlalu besar */
+            padding: 60px; 
+        }
+        .text-section { width: 50%; }
+        .image-section { width: 40%; }
+        .image-section img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .content-section {
+            display: none;
+            padding: 60px;
+        }
+        table, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+        .gallery img {
+            margin: 5px;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    <div><b>Ars Longa Vita Brevis</b></div>
+    <div>A HIGH SCHOOL STUDENT AT SMAN 1 KALIANDA</div>
+</div>
+
+<div class="navbar">
+    <ul>
+        <li onclick="showHome()">Home</li>
+        <li onclick="showTabel()">Tabel</li>
+        <li onclick="showTentang()">Tentang Saya</li>
+        <li onclick="showPuisi()">Puisi</li>
+        <li>
+            <a href="https://open.spotify.com/user/ogs1x1wj6afbm7t1cv2aqjzy7?si=UHdXbscmQJm5g60N6nupHw" target="_blank"><i class="fa-brands fa-spotify"></i></a>
+            <a href="https://www.instagram.com/hungury._" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://wa.me/6283168892438" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </li>
+    </ul>
+</div>
+
+<div class="main" id="mainContent">
+    <div class="text-section">
+        <h1>Ars Longa Vita Brevis</h1>
+        <p>WELCOME TO MY WEBSITE, THERE IS NOTHING SPECIAL HERE. THIS WEBSITE JUST ABOUT MY FAVORITE ART 
+            AND MY BIOGRAPHY MAYBE ONE OF THEM YOUR FAVORITE TOO ENJOY!!.</p>
+    </div>
+    <div class="image-section">
+        <img src="lady jane art.jpg" alt="Art">
+    </div>
+</div>
+
+<div id="tabelSection" class="content-section" style="background-color: brown; min-height: 100vh;">
+    <table border="1" width="100%" bgcolor="grey">
+        <tr>
+            <td align="center">
+                <h1><i><font color="gold">Ars Longa Vita Brevis</font></i></h1>
+            </td>
+        </tr>
+    </table>
+    <div class="gallery">
+        <img src="lady jane art.jpg" width="200" height="150">
+        <img src="ivan with his son.jpg" width="200" height="150">
+        <img src="leonardo art.jpg" width="200" height="150">
+        <img src="jsjs.jpg" width="200" height="150">
+        <img src="viva la vida.jpg" width="200" height="150">
+        <img src="starry night pver the rhone.jpg" width="200" height="150">
+        <img src="mili.jpg" width="200" height="150">
+        <img src="rhone night.jpg" width="200" height="150">
+        <img src="8.jpg" width="200" height="150">
+        <img src="04.jpg" width="200" height="150">
+        <img src="05.jpg" width="200" height="150">
+        <img src="10.jpg" width="200" height="150">
+    </div>
+    <marquee bgcolor="gold"><i>art is long life is short</i></marquee>
+</div>
+
+<div id="tentangSection" class="content-section"> 
+    <h2>Tentang Saya</h2>
+    <p style="text-align: center; color: red;"> KLIK GAMBAR DIBAWAH!! </p>
+    <div style="text-align: center;">
+        <a href="https://heyzine.com/flip-book/e1e4074740.html" target="_blank">
+            <img src="biodata.jpg" alt="Klik Gambar" width="300"> 
+        </a> 
+    </div>
+</div> <div id="puisiSection" class="content-section">
+   <h2>Malam Terakhir</h2>
+    <p><i>
+    Malam ini terasa luruh dan berat <br>
+    Seperti ada sesuatu yang terlepas<br>
+    Ternyata sang takdir membawa kesayanganku bersamanya<br>
+    Menggerogotiku dengan kejam<br>
+    Bersama hembusan angin mereka tertawa<br>
+    Angin angin itu mempermainkanku lagi<br>
+    Sudah lama ia tidak datang membawa bisikan tajam<br>
+    Sepertinya ia datang untuk memberitahuku atas batasanku<br>
+    Seharusnya ia menarik kesayanganku lebih awal<br>
+    Agar aku tidak merasa lancang.<br>
+    </i></p>
+</div>
+
+<script>
+function hideAll(){
+    document.getElementById("mainContent").style.display="none";
+    document.getElementById("tabelSection").style.display="none";
+    document.getElementById("tentangSection").style.display="none";
+    document.getElementById("puisiSection").style.display="none";
+}
+
+function showHome(){
+    hideAll();
+    document.getElementById("mainContent").style.display="flex";
+}
+
+function showTabel(){
+    hideAll();
+    document.getElementById("tabelSection").style.display="block";
+}
+
+function showTentang(){
+    hideAll();
+    document.getElementById("tentangSection").style.display="block";
+}
+
+function showPuisi(){
+    hideAll();
+    document.getElementById("puisiSection").style.display="block";
+}
+</script>
+
+</body>
+</html>

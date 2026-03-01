@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            display:flex;
+            background:#f4f4f4;
+        }
+
+        /* SIDEBAR */
+        .sidebar{
+            width:250px;
+            height:100vh;
+            background:#e9e9e9;
+            padding:40px 20px;
+            text-align:center;
+        }
+
+        .sidebar img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+            margin-bottom:15px;
+        }
+
+        .sidebar h2{
+            font-size:18px;
+            margin-bottom:5px;
+        }
+
+        .sidebar p{
+            font-size:12px;
+            color:gray;
+            margin-bottom:30px;
+        }
+
+        .sidebar ul{
+            list-style:none;
+        }
+
+        .sidebar ul li{
+            padding:10px 0;
+            cursor:pointer;
+            font-size:14px;
+        }
+
+        .sidebar ul li:hover{
+            color:#0099cc;
+        }
+
+        /* MAIN CONTENT */
+        .main{
+            flex:1;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:60px;
+            background:white;
+        }
+
+        .text{
+            max-width:500px;
+        }
+
+        .text h1{
+            font-size:60px;
+            font-weight:300;
+            line-height:1.2;
+            margin-bottom:20px;
+        }
+
+        .text p{
+            color:gray;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            padding:10px 20px;
+            border:1px solid black;
+            text-decoration:none;
+            color:black;
+            font-size:14px;
+        }
+
+        .btn:hover{
+            background:black;
+            color:white;
+        }
+
+        .hero-img img{
+            max-height:500px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+    <img src="profile.jpg" alt="Profile">
+    <h2>Jackson Ford</h2>
+    <p>UI/UX Designer</p>
+
+    <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>SERVICES</li>
+        <li>SKILLS</li>
+        <li>EDUCATION</li>
+        <li>EXPERIENCE</li>
+        <li>WORK</li>
+        <li>BLOG</li>
+        <li>CONTACT</li>
+    </ul>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+    <div class="text">
+        <h1>I am<br>a Designer</h1>
+        <p>100% HTML5 Bootstrap templates Made by colorlib.com</p>
+        <a href="#" class="btn">VIEW PORTFOLIO</a>
+    </div>
+
+    <div class="hero-img">
+        <img src="man.png" alt="Hero Image">
+    </div>
+</div>
+
+</body>
+</html>
